@@ -64,11 +64,11 @@ class VaultSourcePlugin(SourcePlugin):
             "helpMessage": "Must be a valid Vault secrets mount name!",
         },
         {
-            "name": "vaultPath",
-            "type": "str",
-            "required": True,
-            "validation": "^([a-zA-Z0-9._-]+/?)+$",
-            "helpMessage": "Must be a valid Vault secrets path",
+            'name': 'vaultPath',
+            'type': 'str',
+            'required': True,
+            'validation': "^([a-zA-Z0-9._-]+/?)+$",
+            'helpMessage': 'Must be a valid Vault secrets path',
         },
         {
             "name": "objectName",
