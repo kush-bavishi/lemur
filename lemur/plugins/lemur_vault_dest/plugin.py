@@ -67,15 +67,15 @@ class VaultSourcePlugin(SourcePlugin):
             'name': 'vaultPath',
             'type': 'str',
             'required': True,
-            'validation': '^([a-zA-Z0-9._-]+/?)+$',
+            'validation': "^([a-zA-Z0-9._-]+/?)+$",
             'helpMessage': 'Must be a valid Vault secrets path',
         },
         {
-            'name': 'objectName',
-            'type': 'str',
-            'required': True,
-            'validation': '[0-9a-zA-Z.:_-]+',
-            'helpMessage': 'Object Name to search',
+            "name": "objectName",
+            "type": "str",
+            "required": True,
+            "validation": "[0-9a-zA-Z.:_-]+",
+            "helpMessage": "Object Name to search",
         },
     ]
 
